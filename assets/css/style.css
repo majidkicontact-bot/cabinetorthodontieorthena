@@ -1293,6 +1293,25 @@ p { color: var(--c-text-soft); }
   font-style: italic;
   color: var(--c-text-mute);
 }
+
+/* Liste des horaires (footer + page Contact) — remplie dynamiquement à
+   partir de config.openingHours par assets/js/main.js. */
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  margin-top: 0.3em;
+}
+.hours-list:empty { display: none; }
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2em;
+  font-size: 0.92rem;
+  color: var(--c-text-soft);
+}
+.hours-list .hours-day { font-weight: 600; color: var(--c-text); }
+.contact-info-item .hours-note { margin-top: 0.5em; }
 .contact-info-item .address-note {
   font-size: 0.88rem;
   color: var(--c-text-mute);
@@ -1356,6 +1375,10 @@ p { color: var(--c-text-soft); }
 .footer-col ul { display: flex; flex-direction: column; gap: 0.75em; }
 .footer-col a, .footer-col p { font-size: 0.92rem; color: rgba(251,247,241,0.72); }
 .footer-col a:hover { color: var(--c-gold-soft); }
+.footer-col .hours-list { gap: 0.4em; margin-top: 0; }
+.footer-col .hours-list li { font-size: 0.92rem; color: rgba(251,247,241,0.72); }
+.footer-col .hours-list .hours-day { color: var(--c-white); }
+.footer-col .hours-note { margin-top: 0.6em; font-style: italic; color: rgba(251,247,241,0.55); }
 .footer-desc { font-size: 0.92rem; max-width: 34ch; color: rgba(251,247,241,0.65); }
 .footer-cta { margin-top: var(--space-md); }
 

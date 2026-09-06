@@ -54,6 +54,26 @@
         el.setAttribute("href", "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(cfg.addressFullOneLine));
       }
     });
+
+    // Liste des jours/horaires connus (voir assets/js/config.js) — le texte
+    // de repli (data-cfg="openingHoursNote") reste affiché en dessous pour
+    // les jours non encore communiqués.
+    if (cfg.openingHours && cfg.openingHours.length) {
+      document.querySelectorAll("[data-hours-list]").forEach(function (list) {
+        cfg.openingHours.forEach(function (entry) {
+          var li = document.createElement("li");
+          var day = document.createElement("span");
+          day.className = "hours-day";
+          day.textContent = entry.day;
+          var hours = document.createElement("span");
+          hours.className = "hours-time";
+          hours.textContent = entry.hours;
+          li.appendChild(day);
+          li.appendChild(hours);
+          list.appendChild(li);
+        });
+      });
+    }
     setText("[data-cfg='emergencyNumber']", cfg.emergencyNumber);
     setText("[data-cfg='assistantRole']", cfg.assistantRole);
 

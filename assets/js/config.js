@@ -54,12 +54,14 @@ window.ORTHENA_CONFIG = {
   addressFullOneLine: "3 Place Jean Moulin, 42350 La Talaudière",
 
   // ---------------------------------------------------------------------
-  // Horaires — à compléter (aucun horaire n'a été fourni)
+  // Horaires — lundi, mardi et samedi restent à compléter
   // ---------------------------------------------------------------------
   openingHours: [
-    // { day: "Lundi", hours: "9h00 – 18h00" },
+    { day: "Mercredi", hours: "09:00 – 12:00, 13:00 – 19:00" },
+    { day: "Jeudi", hours: "09:00 – 12:00, 13:00 – 19:00" },
+    { day: "Vendredi", hours: "09:00 – 12:00, 13:00 – 19:00" },
   ],
-  openingHoursNote: "Horaires détaillés communiqués prochainement — merci de nous contacter directement pour connaître nos disponibilités.",
+  openingHoursNote: "Horaires du lundi, mardi et samedi communiqués prochainement.",
 
   // ---------------------------------------------------------------------
   // Accès — informations pratiques à compléter
@@ -69,10 +71,10 @@ window.ORTHENA_CONFIG = {
   accessibilityInfo: "", // ex : "Cabinet accessible aux personnes à mobilité réduite"
 
   // ---------------------------------------------------------------------
-  // Équipe — nom de l'assistante non communiqué à ce jour
+  // Équipe — noms des assistantes non communiqués à ce jour
   // ---------------------------------------------------------------------
-  assistantName: "", // à compléter dès que le nom sera communiqué
-  assistantRole: "Assistante dentaire en formation",
+  assistantName: "", // à compléter dès que le(s) nom(s) seront communiqués
+  assistantRole: "Assistantes dentaires en formation",
 
   // ---------------------------------------------------------------------
   // Réseaux sociaux — aucun lien officiel fourni à ce jour
