@@ -1,0 +1,5 @@
+# Fichiers système
+.DS_Store
+
+# Photos sources brutes (non utilisées par le site, simple archive)
+raw-photos/

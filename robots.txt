@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+Disallow: /confidentialite.html
+Disallow: /cookies.html
+
+# À compléter : remplacer par le nom de domaine réel du site une fois déployé.
+Sitemap: https://www.votre-domaine-a-definir.fr/sitemap.xml

@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "orthena-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/Users/majid/Downloads/Orthena Orthodontie/scripts/serve.py"],
+      "port": 8420,
+      "autoPort": true
+    }
+  ]
+}
