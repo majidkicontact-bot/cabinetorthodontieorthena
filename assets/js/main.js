@@ -43,6 +43,7 @@
 
     setText("[data-cfg='phoneDisplay']", cfg.phoneDisplay);
     setText("[data-cfg='emailDisplay']", cfg.emailDisplay);
+    setText("[data-cfg='cabinetName']", cfg.cabinetName);
     setText("[data-cfg='addressLine1']", cfg.addressLine1);
     setText("[data-cfg='addressStreet']", cfg.addressStreet);
     setText("[data-cfg='addressPostal']", cfg.addressPostal);
