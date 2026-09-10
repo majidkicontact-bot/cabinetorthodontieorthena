@@ -25,6 +25,7 @@
   --c-gold-soft:     #C6A66F;
   --c-gold-line:     rgba(169, 129, 78, 0.4);
   --c-gold-bg:       rgba(169, 129, 78, 0.08);
+  --c-brown-accent:  #C08552;   /* brun chaud — accent ponctuel (hero) */
 
   --c-wood:          #C9AF8C;   /* bois clair */
   --c-white:         #FFFFFF;
@@ -582,8 +583,8 @@ p { color: var(--c-text-soft); }
   padding-bottom: var(--space-2xl);
   color: var(--c-white);
 }
-.hero-content .eyebrow { color: var(--c-gold-soft); }
-.hero-content .eyebrow::before { background: var(--c-gold-soft); }
+.hero-content .eyebrow { color: var(--c-brown-accent); }
+.hero-content .eyebrow::before { background: var(--c-brown-accent); }
 .hero-title {
   font-size: clamp(3.1rem, 8vw, 6.4rem);
   color: var(--c-white);
@@ -1054,6 +1055,10 @@ p { color: var(--c-text-soft); }
   transition: transform 1.4s var(--ease-soft);
 }
 .tech-visual.has-photo:hover img { transform: scale(1.04); }
+/* Cadrage plus large pour certaines photos, afin de voir davantage
+   l'appareil dans son ensemble (sans recadrage serré ni déformation). */
+.tech-visual.is-contained { background: var(--c-card); }
+.tech-visual.is-contained img { object-fit: contain; padding: 6%; }
 .tech-index {
   font-family: var(--font-display);
   font-style: italic;

@@ -40,8 +40,8 @@ window.ORTHENA_CONFIG = {
   // ---------------------------------------------------------------------
   phone: "",              // ex : "04 77 XX XX XX"
   phoneDisplay: "Téléphone à venir",
-  email: "",              // ex : "contact@cabinet-orthena.fr"
-  emailDisplay: "Email à venir",
+  email: "orthodontie@cabinetorthena.fr",
+  emailDisplay: "orthodontie@cabinetorthena.fr",
 
   // ---------------------------------------------------------------------
   // Adresse — officielle et confirmée
