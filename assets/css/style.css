@@ -544,6 +544,15 @@ p { color: var(--c-text-soft); }
 @media (max-width: 720px) {
   .mobile-cta-bar { display: block; }
   body { padding-bottom: 0; }
+  /* Le texte du bouton était coupé sur petits écrans (iPhone) : on réduit
+     légèrement la taille de police, l'espacement des lettres et le
+     padding horizontal, uniquement pour ce bouton, afin qu'il tienne
+     entièrement et reste centré. */
+  .mobile-cta-bar .btn {
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+    padding-inline: 1.2em;
+  }
 }
 
 /* ---------------------------------------------------------------------------
