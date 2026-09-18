@@ -22,7 +22,7 @@ window.ORTHENA_CONFIG = {
   // Identité
   // ---------------------------------------------------------------------
   cabinetName: "Cabinet Orthéna",
-  baseline: "Orthodontie exclusive",
+  baseline: "Orthodontie",
   practitioner: "Dr Yamina IBN MEJD",
 
   // ---------------------------------------------------------------------
