@@ -3,3 +3,8 @@
 
 # Photos sources brutes (non utilisées par le site, simple archive)
 raw-photos/
+
+# Documents et photos de travail non utilisés par le site : gardés en local
+# uniquement, ne doivent pas être publiés sur le site (SEO/propreté du dépôt).
+*.docx
+WhatsApp Image*.jpeg

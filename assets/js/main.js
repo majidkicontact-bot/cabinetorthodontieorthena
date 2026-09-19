@@ -59,8 +59,13 @@
     // Liste des jours/horaires connus (voir assets/js/config.js) — le texte
     // de repli (data-cfg="openingHoursNote") reste affiché en dessous pour
     // les jours non encore communiqués.
+    // Le HTML contient déjà un rendu statique de ces horaires (visible sans
+    // JavaScript, utile pour le SEO/l'accessibilité) : on le remplace ici
+    // uniquement pour garder config.js comme source unique de vérité, sans
+    // dupliquer les lignes.
     if (cfg.openingHours && cfg.openingHours.length) {
       document.querySelectorAll("[data-hours-list]").forEach(function (list) {
+        list.innerHTML = "";
         cfg.openingHours.forEach(function (entry) {
           var li = document.createElement("li");
           var day = document.createElement("span");

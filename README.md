@@ -75,5 +75,5 @@ Conformément à la consigne, aucune information suivante n'a été inventée : 
 ## SEO & accessibilité
 
 - Meta title/description propres à chaque page, données structurées (`schema.org` : `Dentist`, `FAQPage`).
-- `robots.txt` et `sitemap.xml` fournis (le nom de domaine y est un espace réservé à remplacer une fois le site déployé).
+- `robots.txt` et `sitemap.xml` fournis, à jour avec le domaine réel : `https://cabinetorthena.fr`.
 - Structure sémantique (landmarks, `h1`-`h3` hiérarchisés), navigation clavier, focus visibles, textes alternatifs sur les images, `prefers-reduced-motion` respecté pour toutes les animations.

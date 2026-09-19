@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------------
+# Cabinet Orthéna — redirections canoniques
+# Objectif SEO : éviter le duplicate content en forçant une seule version
+# d'URL (https, sans www) vers laquelle pointent canonical, sitemap.xml et
+# les données structurées.
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Forcer HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+  # Forcer la version sans "www."
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+</IfModule>
