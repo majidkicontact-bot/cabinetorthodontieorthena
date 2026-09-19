@@ -523,6 +523,15 @@ p { color: var(--c-text-soft); }
     border-top: 1px solid var(--c-line);
   }
   .mobile-nav-footer a.contact-line { font-size: 0.95rem; color: var(--c-text-soft); }
+  /* Le sélecteur ".mobile-nav a" ci-dessus s'applique aussi, par erreur, au
+     bouton "Prendre rendez-vous" du menu mobile (qui est un <a>) : on lui
+     redonne ici la taille/police normale du bouton pour que le texte tienne
+     correctement à l'intérieur. */
+  .mobile-nav-footer .btn {
+    font-family: var(--font-body);
+    font-size: 0.86rem;
+    font-weight: 600;
+  }
 }
 
 /* Sticky mobile CTA */
