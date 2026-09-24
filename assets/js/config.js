@@ -57,9 +57,9 @@ window.ORTHENA_CONFIG = {
   // Horaires — lundi, mardi et samedi restent à compléter
   // ---------------------------------------------------------------------
   openingHours: [
-    { day: "Mercredi", hours: "09:00 – 12:00 / 13:00 – 19:00" },
-    { day: "Jeudi", hours: "09:00 – 12:00 / 13:00 – 19:00" },
-    { day: "Vendredi", hours: "09:00 – 12:00 / 13:00 – 19:00" },
+    { day: "Mercredi", hours: "09:00 – 12:00 / 13:00 – 18:30" },
+    { day: "Jeudi", hours: "09:00 – 12:00 / 13:00 – 18:30" },
+    { day: "Vendredi", hours: "09:00 – 12:00 / 13:00 – 18:30" },
   ],
   // Laissé vide intentionnellement : les jours ci-dessus sont désormais
   // renseignés, donc plus de mention "communiqué prochainement" affichée.
